@@ -1,0 +1,72 @@
+
+body{
+    padding: 0;
+    margin: 0; 
+    outline: none; 
+    font-family: sans-serif; 
+    font-weight: 500;
+    font-size:22px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #41002d;
+}
+input{
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    transition: ease 0.2s;
+}
+input[type = text]{
+    width: calc(100% - 8px);
+    height: 40px;
+}
+input[type = button]{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+div#calculadora{
+    box-shadow: 0 0 20px black;
+}
+div#calculadora div{
+    display: flex;
+}
+div#quarta input:nth-child(1) {
+    background-color: rgb(253, 39, 50);
+}
+div#quarta input:nth-child(1), div#calculadora{
+    border-bottom-left-radius: 35px;
+}
+
+div#quarta input:nth-child(3) {
+    background-color: rgb(58, 242, 248);
+   
+}
+
+div#quarta input:nth-child(4), div#calculadora {
+    border-bottom-right-radius: 35px;
+   
+}
+div#calculadora div input:nth-child(4){
+    background-color: rgb(114, 114, 114);
+}
+input[type = button]:hover {
+    filter: brightness(50%);
+}
+input[type = button]:active {
+    transform: scale(0.9);
+}
+h1{
+    margin: 5%;
+    color:  #8a0562;
+    border-radius: 10px;
+}
+h1:hover{
+    cursor: pointer;
+    color: red;
+}
